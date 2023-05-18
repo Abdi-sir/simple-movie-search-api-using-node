@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs")%>
+<%- include("partials/nav.ejs")%>
+<h2>list of movies you searches</h2>
+<div class="list">
+    <ul>
+  <%data["Search"].forEach(function(movies){%>
+  <li><%= movies["Title"]%></li>
+  <%} )%>
+</ul></div>
+<%- include("partials/footer.ejs")%>
